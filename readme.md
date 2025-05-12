@@ -13,16 +13,31 @@ A full-stack web application for task management built with the MERN stack (Mong
 ## Tech Stack
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
+- Node.js with Express.js
+- MongoDB with Mongoose
+- RESTful API architecture
+- Express-validator for data validation
+- CORS enabled for cross-domain requests
 
 ### Frontend
-- React
+- React 18
 - Redux for state management
-- React Router for navigation
-- Bootstrap for styling
+- React Router v6 for navigation
+- Bootstrap 5 for styling
+- Axios for API requests
+
+## Project Structure
+
+### Backend
+- `server.js`: Main application entry point
+- `routes/api/`: API endpoint definitions
+- `models/`: Mongoose schemas
+- `config/`: Database configuration
+
+### Frontend
+- `src/components/`: React components
+- `src/redux/`: Redux store, actions, and reducers
+- `public/`: Static assets
 
 ## Getting Started
 
@@ -48,7 +63,7 @@ A full-stack web application for task management built with the MERN stack (Mong
 
 3. Install frontend dependencies
    ```
-   cd ../frontend
+   cd frontend
    npm install
    ```
 
@@ -59,19 +74,30 @@ A full-stack web application for task management built with the MERN stack (Mong
 
 ### Running the Application
 
-1. Start the backend server
+1. Start both backend and frontend in development mode
    ```
    cd backend
-   npm start
+   npm run dev
    ```
 
-2. Start the frontend development server
+   This will concurrently run both the server and client using the script defined in package.json.
+
+2. Alternatively, run them separately:
    ```
+   # Terminal 1 - Backend
+   cd backend
+   npm run server
+   
+   # Terminal 2 - Frontend
    cd frontend
    npm start
    ```
 
 3. Open your browser and go to `http://localhost:3000`
+
+## API Endpoints
+
+The backend serves its API from `/api/tasks` with various operations for task management.
 
 ## License
 
