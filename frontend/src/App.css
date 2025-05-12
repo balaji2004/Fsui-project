@@ -1,0 +1,48 @@
+ /* App.css */
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  .task-details-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .task-details-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 75%;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+  }
+  
+  .list-group-item {
+    transition: background-color 0.2s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard .d-md-flex {
+      display: block !important;
+    }
+    
+    .dashboard .text-md-end {
+      text-align: left !important;
+      margin-top: 1rem;
+    }
+  }
