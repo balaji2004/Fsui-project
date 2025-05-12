@@ -13,6 +13,11 @@ connectDB();
 app.use(express.json({ extended: false }));
 app.use(cors());
 
+// Simple route for favicon to avoid proxy errors
+app.get('/favicon.ico', (req, res) => {
+  res.status(204).end();
+});
+
 // Define routes
 app.use('/api/tasks', require('./routes/api/tasks'));
 
